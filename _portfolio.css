@@ -65,15 +65,16 @@ body{
 /* Main Part CSS */
 
 section{
-	min-height: 100vh;
+	
 	width: 100%;
-	border-bottom: 1px solid #ffffff20;
+	/* border-bottom: 1px solid #ffffff20; */
 	padding: 70px 20px;
 }
 
 /* Education Section CSS */
 
 #education{
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,17 +88,17 @@ section{
 	width: 90%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .edu_title{
 	height: 15%;
 	width: 90%;
-	margin: 50px 0px 30px 0px;
-	font-size: 4rem;
+	margin: 20px 0px 30px 0px;
+	font-size: 2.5rem;
 	font-weight: 700;
 	display: flex;
-	justify-content:center;
+	justify-content:flex-start;
 	padding: 10px;
 }
 
@@ -108,6 +109,11 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.edu_logo:hover{
+	transform: scale(1.1, 1.1);
+	filter: drop-shadow(0 0 5px rgb(128, 127, 127));
 }
 
 .bsc_logo{
@@ -139,15 +145,19 @@ section{
 
 
 .edu_content{
-	height: 40vh;
-	width: 70%;
+	height: 36vh;
+	width: 60%;
 	background-color: #1f1f1f;
 	border-radius: 20px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
+.hsc_content, .ssc_content{
+	height: 29vh;
+}
+
 .edu_inset_title{
-	height: 12vh;
+	height: 11vh;
 	width: 100%;
 	background-color: black;
 	border-top-left-radius: 20px;
@@ -160,16 +170,17 @@ section{
 }
 
 .edu_inset_title :nth-child(1){
-	font-size: 1.9rem;
+	font-size: 1.6rem;
 	font-weight: 700;
 }
 
 .edu_inset_title :nth-child(2){
 	font-size: 1.17rem;
+	color: rgb(210, 208, 208);
 }
 
 .edu_inset_content{
-	height: 23vh;
+	height: 20vh;
 	width: 100%;
 	padding: 20px;
 	display: flex;
@@ -178,13 +189,17 @@ section{
 	top: 15px; */
 }
 
+.hsc_details, .ssc_details{
+	height: 13vh;
+}
+
 .edu_inset_content ul li :nth-child(1){
-	font-size: 1.3rem;
-	font-weight: 600;
+	font-size: 1.2rem;
+	font-weight: 550;
 }
 
 .edu_inset_content ul li :nth-child(2){
-	font-size: 1.2rem;
+	font-size: 1.05rem;
 }
 
 .edu_inset_content ul{
@@ -212,6 +227,7 @@ section{
 	font-size: 0.8rem;
 	margin-right: 10px;
 	justify-self: flex-end;
+	font-weight: 550;
 }
 
 .visit_website a{
@@ -220,18 +236,31 @@ section{
 }
 
 .visit_website:hover{
-	transform: scale(1.05, 1.05);
+	font-size: 0.82rem;
+	transform: scale(1.06, 1.06);
 	background-color: white;
 	color: black;
 	filter: drop-shadow(0 0 10px black);
-	font-weight: bold;
+	font-weight: 600;
 }
 
+/* Skill section CSS */
+
+#skills{
+	min-height: 100vh;
+}
+
+/* Projects Section CSS */
+
+#projects{
+	min-height: 100vh;
+}
 
 
 /* Contact Section CSS */
 
 #contact{
+	height: 70vh;
 	display: flex;
 	align-items: center;
 }
@@ -245,17 +274,17 @@ section{
 }
 
 .contact_image{
-	height: 400px;
-	width: 400px;
+	height: 300px;
+	width: 300px;
 	background-color: red;
-	border-radius: 55%;
-	border: 3px solid white;
+	border-radius: 50%;
+	border: 3px solid #4d4c4c;
 	background-image: url("Monirul.jpg");
 	background-size: cover;
 	background-position: center;
 	filter: drop-shadow(0 0 10px #282826);
-    border: 2px solid #ffffff20;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 8px rgba(164, 158, 158, 0.2);
+	margin-left: 10rem;
 }
 
 .contact_image:hover{
@@ -268,12 +297,12 @@ section{
     border: 1px solid #ffffff20;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 	border-radius: 10px;
-	height: 70vh;
-	width: 45%;
-	padding: 30px;
+	height: 50vh;
+	width: 35%;
+	padding: 40px 30px 40px 100px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-around;
 }
 
@@ -284,11 +313,11 @@ section{
 .contact_social_media ul{
 	list-style: none;
 	display: flex;
-	gap: 20px;
+	gap: 15px;
 }
 
 .contact_social_media ul li a i{
-	font-size: 2.5rem;
+	font-size: 1.7rem;
 }
 
 .contact_social_media ul li a i:hover{
@@ -297,34 +326,34 @@ section{
 }
 
 .contact_text1{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 	height: 50px;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
 .contact_text2{
-	height: 100px;
+	height: 65px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 
 }
 
 .contact_text2 ul li{
-	font-size: 1.4rem;
+	font-size: 1.05rem;
 }
 .contact_text2 ul li i{
-	font-size: 1.4rem;
+	font-size: 1.05rem;
 }
 
 .contact_text3{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 /* Footer Part CSS */
@@ -347,6 +376,3 @@ section{
 	color: #00bcd4;
 	filter: drop-shadow(0 0 10px #00bcd440);
 }
-
-
-
