@@ -67,7 +67,6 @@ body{
 section{
 	
 	width: 100%;
-	/* border-bottom: 1px solid #ffffff20; */
 	padding: 70px 20px;
 }
 
@@ -163,6 +162,10 @@ section{
 
 .github_link{
 		margin-top: 10px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 }
 
 .github_link a{
@@ -179,14 +182,102 @@ section{
 	color: black;
 	font-weight: 700;
 	filter: drop-shadow(0 0 8px black);
-	transform: translate(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 }
 
 /* About Section CSS code */
 
 #about{
-	height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
 }
+
+.about_title{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 40px;
+}
+.about_title :nth-child(1){
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.about_title :nth-child(2){
+	color: #d2d0d0;
+	font-size: 0.9rem;
+}
+
+.about_container1{
+	height: 40vh;
+	width: 90%;
+	background-color: red;
+}
+
+.exp_title{
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 50px;
+}
+
+.experience{
+	min-height: 60vh;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.experience1, .experience2{
+	height: 40vh;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+
+
+.experience1{
+	padding: 5px;
+}
+
+.experience2{
+	padding: 5px;
+}
+
+.exp_details{
+	height: 100%;
+	width: 80%;
+	background-color: pink;
+}
+
+.exp1_pic{
+	background-image: url("WUBCS.jpg");
+}
+
+.exp2_pic{
+	background-image: url("WUBRC.jpg");
+}
+
+
+.exp-pic{
+	height: 100%;
+	width: 20%;
+	border: 2px solid #282826;
+	filter: drop-shadow(0 0 10px black);
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 /* Education Section CSS */
 
@@ -407,6 +498,14 @@ section{
 	box-shadow: 0px  0px 6px 1px black;
 }
 
+.skill_1_elements ul li:hover{
+	transform: scale(1.2, 1.2);
+}
+
+.skill_2_elements ul li:hover{
+	transform: scale(1.2, 1.2);
+}
+
 /* Projects Section CSS */
 
 #projects{
@@ -582,7 +681,7 @@ section{
 }
 
 .link_to_project a{
-	padding: 8px 13px;
+	padding: 15px 35px;
 	border-radius: 8px;
 	border: 2px solid #1f1f1f;
 	background-color: black;
