@@ -406,15 +406,15 @@ section{
 	min-height: 50vh;
 	width: 90%;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-around;
+	margin-top: 100px;
 }
 
 .some_features ul{
 	list-style: none;
 	display: flex;
-	gap: 5px;
-	align-items: center;
+	gap: 20px;
+	flex-direction: column;
 }
 
 .some_features ul li{
@@ -423,12 +423,15 @@ section{
 	border-radius: 5px;
 	border: 1px solid black;
 	filter: drop-shadow(0 0 10px black);
+	width: fit-content;
 }
 
 .key_features{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	min-height: 50vh;
+	width: 50%;
 }
 
 .feature_title{
@@ -437,9 +440,8 @@ section{
 }
 
 .project_goal{
-	height: 40vh;
-	width: 90%;
-	background-color: red;
+	min-height: 40vh;
+	width: 50%;
 }
 
 .goal_title{
@@ -448,7 +450,42 @@ section{
 }
 
 .goal{
+	width: 90%;
 	padding: 10px;
+	margin: 10px 0px;
+	background-color: #1f1f1f;
+	border: 1px solid black;
+	border-radius: 8px;
+	filter: drop-shadow(0 0 8px black);
+}
+
+.link_to_project{
+	height: 20vh;
+	width: 80%;
+	padding: 10px 15px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.link_to_project a{
+	padding: 8px 13px;
+	border-radius: 8px;
+	border: 2px solid #1f1f1f;
+	background-color: black;
+	filter: drop-shadow(0 0 10px black);
+	font-weight: 580;
+}
+
+.link_to_project a:hover{
+	border: 2px solid #1f1f1f;
+	background-color: white;
+	filter: drop-shadow(0 0 10px black);
+	color: black;
+	font-weight: 620;
+	transform: scale(1.1, 1.1);
 }
 
 
