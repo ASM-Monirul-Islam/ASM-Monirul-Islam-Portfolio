@@ -327,7 +327,7 @@ section{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	gap: 20px;
+	gap: 5px;
 }
 
 
@@ -354,7 +354,6 @@ section{
 .edu_logo{
 	height: 40vh;
 	width: 30%;
-	/* background-color: red; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -366,8 +365,8 @@ section{
 }
 
 .bsc_logo{
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 	background-image: url("WUB_logo.png");
 	background-size: cover;
 	background-position: center;
@@ -375,8 +374,8 @@ section{
 }
 
 .hsc_logo{
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 	background-image: url("RUMC_logo.png");
 	background-size: cover;
 	object-fit: cover;
@@ -384,8 +383,8 @@ section{
 }
 
 .ssc_logo{
-	height: 240px;
-	width: 240px;
+	height: 200px;
+	width: 200px;
 	background-image: url("ACS_logo.png");
 	background-size: cover;
 	object-fit: cover;
@@ -394,19 +393,19 @@ section{
 
 
 .edu_content{
-	height: 36vh;
-	width: 60%;
+	height: 29vh;
+	width: 56%;
 	background-color: #1f1f1f;
 	border-radius: 20px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .hsc_content, .ssc_content{
-	height: 29vh;
+	height: 23vh;
 }
 
 .edu_inset_title{
-	height: 11vh;
+	height: 10vh;
 	width: 100%;
 	background-color: black;
 	border-top-left-radius: 20px;
@@ -419,17 +418,17 @@ section{
 }
 
 .edu_inset_title :nth-child(1){
-	font-size: 1.6rem;
+	font-size: 1.05rem;
 	font-weight: 700;
 }
 
 .edu_inset_title :nth-child(2){
-	font-size: 1.17rem;
+	font-size: 1rem;
 	color: rgb(210, 208, 208);
 }
 
 .edu_inset_content{
-	height: 20vh;
+	height: 15vh;
 	width: 100%;
 	padding: 20px;
 	display: flex;
@@ -437,11 +436,11 @@ section{
 }
 
 .hsc_details, .ssc_details{
-	height: 13vh;
+	height: 9vh;
 }
 
 .edu_inset_content ul li :nth-child(1){
-	font-size: 1.2rem;
+	font-size: 1.05rem;
 	font-weight: 550;
 }
 
