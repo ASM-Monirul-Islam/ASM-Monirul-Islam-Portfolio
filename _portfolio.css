@@ -252,8 +252,6 @@ section{
 	gap: 10px;
 }
 
-
-
 .experience1{
 	padding: 5px;
 }
@@ -393,7 +391,7 @@ section{
 
 
 .edu_content{
-	height: 29vh;
+	height: 30vh;
 	width: 56%;
 	background-color: #1f1f1f;
 	border-radius: 20px;
@@ -401,7 +399,7 @@ section{
 }
 
 .hsc_content, .ssc_content{
-	height: 23vh;
+	height: 24vh;
 }
 
 .edu_inset_title{
